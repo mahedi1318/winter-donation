@@ -66,7 +66,8 @@ const Hero = () => {
                             <h1 className='text-[#fff] young_serif text-[50px] font-bold w-[750px] m-auto'>{item.title}</h1>
                             <p className='text-[#fff] jost text-[15px] font-normal w-[800px] mt-3 m-auto'>{item.description}</p>
                             <div className="flex items-center space-x-8 mt-8 justify-center">
-                                <Link className='py-3 px-8 bg-[#1A685B] jost text-[16px] font-medium text-[#fff] inline-block rounded-md' to="/">Available Donation</Link>
+                                <Link className='py-3 px-8 bg-[#1A685B] jost text-[16px] font-medium text-[#fff] inline-block rounded-md hover:bg-white
+                                 hover:text-[#444] transition-all duration-500' to="/">Available Donation</Link>
                                 <div className="text-[#fff] jost text-[16px] font-normal text-left">
                                     <span className='block'>Anytime Call</span>
                                     <Link className='inline-block underline' to="/">(+8800) 123 456 789</Link>
