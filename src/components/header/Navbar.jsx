@@ -9,10 +9,10 @@ let links = (
         <NavLink to="/">Home</NavLink>
     </li>
     <li>
-        <NavLink to="/">Donation Campaigns</NavLink>
+        <NavLink to="/donation-campain">Donation Campaigns</NavLink>
     </li>    
     <li>
-        <NavLink to="/">Dashboard</NavLink>
+        <NavLink to="/deshbord">Dashboard</NavLink>
     </li>
     </>
 )
@@ -39,8 +39,8 @@ let links = (
             </ul>
         </div>
         <div className="navbar-end space-x-3">
-            <Link className='btn btn-info' to="/">Login</Link>
-            <Link className='btn btn-info' to="/">Register</Link>
+            <Link className='btn btn-info' to="/login">Login</Link>
+            <Link className='btn btn-info' to="/register">Register</Link>
           
         </div>
         </div>

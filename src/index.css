@@ -1,3 +1,13 @@
+/* --------------young_serif--------------- */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/* --------------jost------------- */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* ---------caveat-------------- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -6,4 +16,37 @@
     width: 90%;
     max-width: 1320px;
     margin: 0 auto;
+}
+
+.young_serif{
+    font-family: "Young Serif", serif;    
+}
+
+.jost {
+    font-family: "Jost", sans-serif    
+}
+
+.caveat{
+    font-family: "Caveat", cursive;    
+}
+
+
+.swiper-button-next {
+    background: #1A685B;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 30px;
+    color: #fff !important;
+}
+
+.swiper-button-prev{
+    background: #1A685B;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 30px;
+    color: #fff !important;
+}
+
+::after {
+    font-size: 18px !important;
 }
