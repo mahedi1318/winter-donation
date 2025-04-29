@@ -14,12 +14,12 @@ const Team = () => {
       <div className="container">
         <div className="text-center">
             <span className='py-2 px-6 bg-[#F6EEE6] jost text-[18px] rounded-md mb-4 inline-block'>Team</span>
-            <h2 className='jost text-[55px] font-bold'>The Volunteers</h2>
-            <p className='jost text-[15px] font-normal w-[400px] m-auto mt-3'>Lorem ipsum odor amet consectetuer adipiscing elit placerat vulputate proin pellentesque dapibus.</p>
+            <h2 className='jost text-[30px] md:text-[55px] font-bold'>The Volunteers</h2>
+            <p className='jost text-[15px] font-normal w-[100%] lg:w-[400px] m-auto mt-3'>Lorem ipsum odor amet consectetuer adipiscing elit placerat vulputate proin pellentesque dapibus.</p>
         </div>
-        <div className="grid grid-cols-4 gap-[20px] mt-8">  
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[20px] mt-8">  
             <div className="bg-[#fff] h-[480px] group">
-                <div className="w-full h-[400px] relative overflow-hidden">
+                <div className="w-full h-[400px] md:h-[400px] relative overflow-hidden">
                     <img className='w-full h-full object-cover' src={teamimg1} alt="" />
                     <div className="w-[55%] py-[10px] px-[10px] bg-[rgba(204,204,204,0.5)] rounded-2xl absolute bottom-[-70px] left-[50%] translate-x-[-50%] group-hover:bottom-[10px] transition-all duration-500">
                         <ul className='flex justify-between items-center'>

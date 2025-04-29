@@ -5,13 +5,13 @@ const AboutUs = () => {
   return (
     <div className='my-[100px]'>
       <div className="container">
-        <div className="grid grid-cols-2 gap-[100px]">
-            <div className="h-[550px] border-12 border-[#1A685B] rounded-3xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[100px]">
+            <div className="h-[300px] md:h-[550px] border-12 border-[#1A685B] rounded-3xl">
                 <img className='w-full h-full object-cover' src={abouteImg} alt="" />
             </div>
             <div className="">
                 <span className='py-2 px-6 bg-[#F6EEE6] jost text-[18px] rounded-md mb-4 inline-block'>About Us</span>
-                <h2 className='jost text-[45px] font-bold leading-[60px]'>We are in a mission to help the helpless</h2>
+                <h2 className='jost text-[30px] md:text-[45px] font-bold leading-[40px] md:leading-[60px]'>We are in a mission to help the helpless</h2>
                 <p className='jost text-[18px] font-normal mt-5'>Lorem ipsum odor amet, consectetuer adipiscing elit placerat vulputate proin pellentesque dapibus.</p>
                 <div className="mt-6">
                     <ul>

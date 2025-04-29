@@ -11,12 +11,12 @@ const Footer = () => {
     <>
     <footer className='bg-[#000] py-16 mt-[80px]'>
         <div className="container">
-            <div className="grid grid-cols-6 gap-[25px]">
-                <div className=" col-span-2">
+            <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-[25px]">
+                <div className="lg:col-span-2 xl:col-span-2">
                     <Link to="" >
                         <img className='w-[40%]' src={footerlogo} alt="" />
                     </Link>
-                    <p className='text-[#ccc] w-[350px] mt-5'>Our secure online donation platform allows you to make contributions quickly and safely. Choose from various.</p>
+                    <p className='text-[#ccc] w-[100%] lg:w-[350px] mt-5'>Our secure online donation platform allows you to make contributions quickly and safely. Choose from various.</p>
                     <button className='btn bg-[#1A685B] border-0 text-white outline-0 inline-block mt-8'>Donate Now</button>
                 </div>
                 <div className="">
@@ -53,7 +53,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="bg-[#13443c] border border-[#039b7c] col-span-2 rounded-3xl px-[30px] py-[20px] relative">
+                <div className="bg-[#13443c] border border-[#039b7c] xl:col-span-2 rounded-3xl px-[30px] py-[20px] relative">
                     <h3 className='mb-5 young_serif text-[22px] text-white font-bold'>Our Service</h3>
                     <div className="space-y-4">
                         <div className="">
@@ -65,24 +65,24 @@ const Footer = () => {
                             <Link className='jost text-[16px] font-normal text-[#ccc]' to="">Example@gmail.com</Link>
                         </div>
                     </div>
-                    <div className="p-1 border-1 border-[#039b7c] rounded-full absolute top-1.5 right-1">
+                    <div className="p-1 border-0 mt-4 xl:mt-0 xl:border-1 border-[#039b7c] rounded-full flex xl:block flex-wrap space-x-3 xl:space-x-0 xl:absolute top-1.5 right-1">
                         <Link to="/" >
-                            <div className="mb-3.5 w-[45px] h-[45px] bg-white rounded-full flex items-center justify-center group hover:bg-[#039b7c] transition-all duration-300">
+                            <div className="mb-3.5 w-[35px] xl:w-[45px] h-[35px] xl:h-[45px] bg-white rounded-full flex items-center justify-center group hover:bg-[#039b7c] transition-all duration-300">
                                 <FaFacebookF className='text-[20px] group-hover:text-white transition-all duration-300' />
                             </div>
                         </Link>
                         <Link to="/">
-                            <div className="mb-3.5 w-[45px] h-[45px] bg-white rounded-full flex items-center justify-center group hover:bg-[#039b7c] transition-all duration-300">
+                            <div className="mb-3.5 w-[35px] xl:w-[45px] h-[35px] xl:h-[45px] bg-white rounded-full flex items-center justify-center group hover:bg-[#039b7c] transition-all duration-300">
                                 <IoLogoTwitter className='text-[20px] group-hover:text-white transition-all duration-300' />
                             </div>
                         </Link>
                         <Link to="/">
-                            <div className="mb-3.5 w-[45px] h-[45px] bg-white rounded-full flex items-center justify-center group hover:bg-[#039b7c] transition-all duration-300">
+                            <div className="mb-3.5 w-[35px] xl:w-[45px] h-[35px] xl:h-[45px] bg-white rounded-full flex items-center justify-center group hover:bg-[#039b7c] transition-all duration-300">
                                 <FaYoutube className='text-[20px] group-hover:text-white transition-all duration-300' />
                             </div>
                         </Link>
                         <Link to="/">
-                            <div className="w-[45px] h-[45px] bg-white rounded-full flex items-center justify-center group hover:bg-[#039b7c] transition-all duration-300">
+                            <div className="w-[35px] xl:w-[45px] h-[35px] xl:h-[45px] bg-white rounded-full flex items-center justify-center group hover:bg-[#039b7c] transition-all duration-300">
                                 <FaLinkedinIn className='text-[20px] group-hover:text-white transition-all duration-300' />
                             </div>
                         </Link>
