@@ -1,16 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import { useForm, Controller } from 'react-hook-form'
 import UseAuth from '../../hook/UseAuth'
 
 const LoginForm = () => {
 
   const {loginAccount} = UseAuth()
+  const navigate = useNavigate()
   const { register, handleSubmit, reset, setValue, control } = useForm()
   const onSubmit = (data) => {
     const {email, password} = data;
     loginAccount(email, password).then((result)=>{
       console.log(result)
+      navigate("/")
     }).catch((err)=>{
       console.log(err.message)
     })

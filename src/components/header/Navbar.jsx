@@ -1,8 +1,22 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router'
+import { Link, NavLink, useNavigate } from 'react-router'
 import logo from "../../assets/image/loggo.png"
+import UseAuth from '../../hook/UseAuth'
 
 const Navbar = () => {
+
+    const {user, logOutAccount} = UseAuth();
+    const navigate = useNavigate();
+    console.log(user)
+
+    const handleLogOut = ()=>{
+        logOutAccount().then(()=>{
+            console.log("logout")
+            navigate("/login")
+        }).catch((error)=>{
+            console.log(error.message)
+        })
+    }
 
 let links = (
     <>
@@ -43,8 +57,16 @@ let links = (
                 </ul>
             </div>
             <div className="navbar-end space-x-3">
+                {!user && !user?.email ?
+                <>
                 <Link className='btn bg-[#1A685B] text-white jost' to="/login">Login</Link>
                 <Link className='btn bg-[#1A685B] text-white jost' to="/register">Register</Link>
+                </>
+                 : 
+                 <>
+                 <button onClick={handleLogOut} className='btn bg-[#1A685B] text-white jost'>LogOut</button> 
+                 </>
+                 }
             
             </div>
             </div>
