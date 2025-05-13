@@ -29,6 +29,9 @@ let links = (
     <li>
         <NavLink to="/deshbord">Dashboard</NavLink>
     </li>
+     <li>
+        <NavLink to="/profile">Profile</NavLink>
+    </li>
     </>
 )
 
