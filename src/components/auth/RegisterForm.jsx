@@ -41,7 +41,7 @@ const RegisterForm = () => {
             <label className='block outfit text-[16px] font-medium' htmlFor="">Password</label>
             <input className='outfit text-[16px] font-normal border pl-[10px] w-full h-[40px] mt-1 rounded-lg' {...register("password")} type="password" name='password' placeholder='Password' required/>
         </div>
-        <div className='mt-2'><a className="link link-hover outfit text-[17px] font-semibold">Forgot password?</a></div>
+        <div className='mt-2'><Link to="/resetPassword" className="link link-hover outfit text-[17px] font-semibold">Forgot password?</Link></div>
         <button className="btn btn-neutral bg-[#1a685b] border-0 mt-4 w-full">Register</button>
         </form>
         <div className="text-center mt-8">
