@@ -2,11 +2,13 @@ import React, { useContext } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { useForm } from "react-hook-form"
 import UseAuth from '../../hook/UseAuth'
+import { getAuth, sendEmailVerification } from "firebase/auth";
 
 
 
 const RegisterForm = () => {
 
+  const auth = getAuth();
   const {createAccount} = UseAuth()
   const navigate = useNavigate()
 
@@ -16,9 +18,11 @@ const RegisterForm = () => {
     const {name, email, password} = data;
     console.log(name)   
     createAccount(email, password).then((result)=>{
-      console.log(result)
-      reset()
-      navigate("/")
+      sendEmailVerification(auth.currentUser).then(()=>{
+        console.log("verification")
+        reset()
+        navigate("/")
+      })
     }).catch((err)=>{
       console.log(err.message)
     })

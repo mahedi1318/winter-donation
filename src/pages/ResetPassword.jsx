@@ -37,7 +37,7 @@ const ResetPassword = () => {
                 <fieldset className="fieldset">
                   <label className="label">Email</label>
                   <input type="email" className="input w-full outline-0" placeholder="Email" {...register("email")} />              
-                  <button className="btn bg-[#1a685b] text-white mt-4">Login</button>
+                  <button className="btn bg-[#1a685b] text-white mt-4">Reset Password</button>
                 </fieldset>
               </form>
             </div>
